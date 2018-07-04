@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.savantech.bottomdragview.BottomView
+        android:id="@+id/bottom.view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:peekHeight="60dp">
+        <LinearLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/green">
+                <ImageButton
+                    android:id="@+id/tap"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_down"
+                    android:background="@android:color/transparent"
+                    android:tint="#fff"/>
+            </android.support.v7.widget.Toolbar>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3c98df"
+                android:text="This is bottom view!"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </com.savantech.bottomdragview.BottomView>
+
+</RelativeLayout>
